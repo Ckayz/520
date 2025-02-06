@@ -1,0 +1,55 @@
+/* Importing Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap");
+
+/* Tailwind Base, Components, and Utilities */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global reset for margin, padding, and box-sizing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Root styles for font family and text rendering */
+:root {
+  font-family: "Protest Riot", system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #f56565;
+}
+
+/* Body styles */
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh; /* Full screen height */
+  overflow: hidden; /* Prevent overflow of content */
+  background-color: #f7fafc; /* Fallback color in case video doesn't load */
+}
+
+/* Background video styles */
+.background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;  /* Makes the video fill the screen without distortion */
+  z-index: -1;        /* Keeps the video in the background */
+}
+
+/* Ensure text and elements on the page are centered and properly styled */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  color:white;
+  stroke: black;
+  stroke: width 10px;
+}
+
